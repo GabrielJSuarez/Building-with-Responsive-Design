@@ -181,3 +181,36 @@ article.d-grid {
   grid-template-columns: 1fr 4fr;
 }
 
+.bg-latest__news-1 {
+  background-image: url()
+}
+
+.bg-latest__news-2 {
+  background-image: url('./assets/images/news-1.jpg')
+}
+
+.bg-latest__news-3 {
+  background-image: url('./assets/images/news-2.jpg')
+}
+
+.bg-latest__news-4 {
+  background-image: url('./assets/images/news-3.jpg')
+}
+
+.bg-latest__news-5 {
+  background-image: url('./assets/images/news-5.jpg')
+}
+
+.bg-latest__news-6 {
+  background-image: url('./assets/images/news-6.jpg')
+}
+
+.bg-latest__news-7 {
+  background-image: url('./assets/images/news-7.jpg')
+}
+
+.bg-latest__news-8 {
+  background-image: url('./assets/images/news-6.jpg')
+}
+
+
