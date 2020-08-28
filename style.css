@@ -4,10 +4,10 @@
 /* GLOBALS */
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
-  /* 1rem = 10px */
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    /* 1rem = 10px */
 }
 
 *,
@@ -22,70 +22,91 @@ img {
 }
 
 ul {
-  margin: 0;
+    margin: 0;
 }
 
 a {
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 .d-flex {
-  display: flex;
+    display: flex;
 }
 
 .d-grid {
-  display: grid;
+    display: grid;
 }
+
 
 /* HEADER */
 
+.nav-container {
+    position: relative;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+}
+
 .nav-header {
-  align-items: center;
-  justify-content: space-between;
-  height: 4.8rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.8rem;
 }
 
 .img-logo {
-  width: 30%;
+    width: 30%;
 }
 
 .logo-header {
-  background: url(./assets/images/page-logo.png);
-  background-size: cover;
-  width: 10.2rem; 
-  height: 4.8rem;
-  background-position: center;
+    background: url(./assets/images/page-logo.png);
+    background-size: cover;
+    width: 10.2rem;
+    height: 4.8rem;
+    background-position: center;
 }
 
 .icons-header {
-  height: 4.8rem;
+    height: 4.8rem;
 }
 
-.icons-header i{
-  font-size: 1.7rem;
-  margin-right: 0.5rem;
-  padding: 1.8rem 1.5rem;
-  height: 4.8rem;
+.icons-header i {
+    font-size: 1.7rem;
+    margin-right: 0.5rem;
+    padding: 1.8rem 1.5rem;
+    height: 4.8rem;
 }
 
 .icons-header .fa-search {
-  color: #aca8a8;
-  border: 1px solid #eee;
-  border-top:none;
-  border-bottom: none;
+    color: #aca8a8;
+    border: 1px solid #eee;
+    border-top: none;
+    border-bottom: none;
 }
 
-
 .icons-header .fa-bars {
-  color: #ff4422;
+    color: #ff4422;
 }
 
 .offer-header {
-  background-color: #fd3;
-  height: 6rem;
-  text-align: center;
-  padding: 6% 0;
-  font-size: 1.2rem;
+    background-color: #fd3;
+    height: 6rem;
+    text-align: center;
+    padding: 6% 0;
+    font-size: 1.2rem;
+}
 
+
+/* ------------------- */
+
+
+/* First Article Section */
+
+.articles-container {
+    margin-top: 5rem;
 }
