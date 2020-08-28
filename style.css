@@ -3,10 +3,6 @@
 
 /* GLOBALS */
 
-body {
-  max-width: 144rem;
-}
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -29,6 +25,11 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .d-flex {
   display: flex;
 }
@@ -39,26 +40,40 @@ ul {
 
 /* HEADER */
 
-nav.nav-header {
+.nav-header {
   align-items: center;
   justify-content: space-between;
+  height: 4.8rem;
 }
 
 .img-logo {
   width: 30%;
 }
 
-.icons-header {
+.logo-header {
+  background: url(./assets/images/page-logo.png);
+  background-size: cover;
+  width: 10.2rem; 
+  height: 4.8rem;
+  background-position: center;
+}
 
+.icons-header {
+  height: 4.8rem;
 }
 
 .icons-header i{
-  font-size: 2rem;
-  padding: 1.3rem;
+  font-size: 1.7rem;
+  margin-right: 0.5rem;
+  padding: 1.8rem 1.5rem;
+  height: 4.8rem;
 }
 
 .icons-header .fa-search {
   color: #aca8a8;
+  border: 1px solid #eee;
+  border-top:none;
+  border-bottom: none;
 }
 
 
@@ -66,3 +81,11 @@ nav.nav-header {
   color: #ff4422;
 }
 
+.offer-header {
+  background-color: #fd3;
+  height: 6rem;
+  text-align: center;
+  padding: 6% 0;
+  font-size: 1.2rem;
+
+}
