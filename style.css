@@ -6,7 +6,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     /* 1rem = 10px */
 }
 
@@ -108,5 +108,50 @@ a {
 /* First Article Section */
 
 .articles-container {
-    margin-top: 5rem;
+    margin-top: 8rem;
+}
+
+.article-content {
+    height: 33rem;
+    margin: 0 1rem 1rem;
+}
+
+.article-1,
+.article-2,
+.article-3 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.article-1 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/business-ethics-796x447.jpg);
+}
+
+.article-2 {
+    background-image: url(./assets/images/header-background-3.png);
+}
+
+.article-3 {
+    background-image: url(./assets/images/header-background-2.png);
+}
+
+.flex-p {
+    align-items: flex-end;
+}
+
+.article-header h2 {
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.article-footer {
+    margin-top: 0;
+}
+
+.article-footer p {
+    margin: 0.3rem 1rem 0 0;
+    font-size: 1.2rem;
+    color: #999;
 }
