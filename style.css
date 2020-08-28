@@ -1,0 +1,68 @@
+/* STYLE SHEET */
+
+
+/* GLOBALS */
+
+body {
+  max-width: 144rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+/* HEADER */
+
+nav.nav-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-logo {
+  width: 30%;
+}
+
+.icons-header {
+
+}
+
+.icons-header i{
+  font-size: 2rem;
+  padding: 1.3rem;
+}
+
+.icons-header .fa-search {
+  color: #aca8a8;
+}
+
+
+.icons-header .fa-bars {
+  color: #ff4422;
+}
+
