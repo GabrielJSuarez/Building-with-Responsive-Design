@@ -63,6 +63,7 @@ a {
     right: 0;
     left: 0;
     background-color: #fff;
+    z-index: 10;
 }
 
 .nav-header {
@@ -278,3 +279,28 @@ article.d-grid {
     font-size: 1.3rem;
     font-weight: 500;
 }
+
+.funding-header {
+  background-color: #f42;
+  position: relative;
+  height: 3.5rem;
+}
+
+.funding-header img {
+  width: 6.2rem;
+  position: absolute;
+  left: 1.5rem;
+}
+
+.funding-header h4 {
+  margin-left: 9rem;
+  font-size: 1.8rem;
+  color: #fff; 
+  padding: 0.7rem 0;
+}
+
+.funding-price {
+  background-color: #ffebe7;
+  padding-left: 9rem;
+}
+
