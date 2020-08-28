@@ -112,8 +112,9 @@ a {
 }
 
 .article-content {
-    height: 33rem;
+    height: 23rem;
     margin: 0 1rem 1rem;
+    padding: 1.2rem 0;
 }
 
 .article-1,
@@ -125,24 +126,30 @@ a {
 }
 
 .article-1 {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/business-ethics-796x447.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0.603)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/business-ethics-796x447.jpg);
 }
 
 .article-2 {
-    background-image: url(./assets/images/header-background-3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0.603)), url(./assets/images/header-background-3.png);
 }
 
 .article-3 {
-    background-image: url(./assets/images/header-background-2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0.603)), url(./assets/images/twitter-bg.png);
 }
 
 .flex-p {
     align-items: flex-end;
 }
 
+
+
+.article-header {
+  padding: 1rem 1.5rem;
+}
+
 .article-header h2 {
     font-size: 1.8rem;
-    color: #000;
+    color: #fff;
     margin-bottom: 0;
 }
 
@@ -152,6 +159,25 @@ a {
 
 .article-footer p {
     margin: 0.3rem 1rem 0 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #999;
 }
+
+.main-section {
+  margin-top: 8rem;
+}
+
+.latest-section {
+  padding: 2rem;
+}
+
+.latest-section h2 {
+  color: #f42;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+article.d-grid {
+  grid-template-columns: 1fr 4fr;
+}
+
