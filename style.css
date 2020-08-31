@@ -427,25 +427,30 @@ a {
 
 .fork-list ul {
     list-style: none;
-    padding: 0 0 0 1rem;
-}
-
-ul li::before {
-    content: "\2022";
-    color: red;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+    padding: 0
 }
 
 .fork-list ul li {
     color: #555;
     font-size: 1.2rem;
-    padding-bottom: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
     margin-bottom: 1.3rem;
+    line-height: 2;
+    position: relative;
+}
+
+.fork-list ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    position: absolute;
+    top: -0.4rem;
+    left: 0;
+    font-size: 2rem;
 }
 
 .bottom-line {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #f9f9f9;
 }
