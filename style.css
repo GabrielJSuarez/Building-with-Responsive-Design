@@ -57,6 +57,13 @@ a {
 
 /* HEADER */
 
+@media only screen and (max-width:425px){
+    .top-bar{
+        display: none;
+    }
+}
+
+
 .nav-container {
     position: relative;
 }
