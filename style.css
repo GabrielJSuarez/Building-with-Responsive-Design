@@ -153,10 +153,15 @@ a {
 .article-podium,
 .article-launch,
 .article-distract,
-.latest-bg,
+.latest-bg-cod,
 .latest-bg-google,
+.latest-bg-blueray,
 .latest-bg-python,
-.latest-bg-design__thinking  {
+.latest-bg-design__thinking,
+.latest-bg-landing__page,
+.latest-bg-bitcoin,
+.latest-bg-bmw,
+.latest-bg-chrome {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -419,13 +424,16 @@ a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/hqdefault.jpg);
 }
 
-.latest-bg {
+.latest-bg-cod {
     background-image: url(./assets/images/callofdutycoldwar.jpg);
-   
 }
 
 .latest-bg-google {
     background-image: url(./assets/images/google-logo-img.png);
+}
+
+.latest-bg-blueray {
+    background-image: url(./assets/images/blue-ray-img.jpg);
 }
 
 .latest-bg-python {
@@ -434,6 +442,22 @@ a {
 
 .latest-bg-design__thinking {
     background-image: url(./assets/images/design-thinking.jpg);
+}
+
+.latest-bg-landing__page {
+    background-image: url(./assets/images/product-landing-page.jpg);
+}
+
+.latest-bg-bitcoin {
+    background-image: url(./assets/images/bitcoin-today-big.jpg);
+}
+
+.latest-bg-bmw {
+    background-image: url(./assets/images/BMW-ix3-unveiling-car-future-bavarian-motor-ev-electric.png);
+}
+
+.latest-bg-chrome {
+    background-image: url(./assets/images/Dinoswords_ProductHunt_GalleryImage2_v1-1.png);
 }
 
 .fork-list {
