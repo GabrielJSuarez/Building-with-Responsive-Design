@@ -161,7 +161,15 @@ a {
 .latest-bg-landing__page,
 .latest-bg-bitcoin,
 .latest-bg-bmw,
-.latest-bg-chrome {
+.latest-bg-chrome,
+.bg-latest-deals-1,
+.bg-latest-deals-2,
+.bg-latest-deals-3,
+.bg-latest-deals-4,
+.bg-latest-deals-5,
+.bg-latest-deals-6,
+.bg-latest-deals-7,
+.bg-latest-deals-8 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -492,4 +500,57 @@ a {
 
 .bottom-line {
     border-bottom: 1px solid #eee;
+}
+
+
+/*---------------------------*/
+
+
+/* LATEST DEALS */
+
+.deals-title {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deals-title p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.bg-latest-deals-1 {
+    background-image: url(./assets/images/sale_36849_primary_image.jpg);
+}
+
+.bg-latest-deals-2 {
+    background-image: url(./assets/images/sale_36919_primary_image.jpg);
+}
+
+.bg-latest-deals-3 {
+    background-image: url(./assets/images/product_47836_product_shots2.jpg);
+}
+
+.bg-latest-deals-4 {
+    background-image: url(./assets/images/sale_37000_primary_image.jpg);
+}
+
+.bg-latest-deals-5 {
+    background-image: url(./assets/images/sale_38683_primary_image.jpg  );
+}
+
+.bg-latest-deals-6 {
+    background-image: url(./assets/images/product_27619_product_shots1.jpg  );
+}
+
+.bg-latest-deals-7 {
+    background-image: url(./assets/images/sale_27983_primary_image.jpg  );
+}
+
+.bg-latest-deals-8 {
+    background-image: url(./assets/images/product_30218_product_shots1.jpg );
+}
+
+.price-deals p {
+    font-size: 1.2rem;
+    margin-right: 1rem;
 }
