@@ -245,29 +245,6 @@ a {
     line-height: 1.3;
 }
 
-.fork-list {
-    margin-top: 1rem;
-}
-
-.fork-list ul {
-    list-style: none;
-    padding: 0 0 0 1rem;
-}
-
-ul li::before {
-    content: "\2022";
-    color: red;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-}
-
-.fork-list ul li {
-    color: rgb(121, 93, 93);
-    font-size: 1.5rem;
-}
-
 .bg-latest__news-1 {
     background-image: url(./assets/images/news-1.jpg);
 }
@@ -442,4 +419,33 @@ ul li::before {
 .latest-bg {
     background-image: url(./assets/images/callofdutycoldwar.jpg);
     height: 10rem;
+}
+
+.fork-list {
+    margin-top: 1rem;
+}
+
+.fork-list ul {
+    list-style: none;
+    padding: 0 0 0 1rem;
+}
+
+ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.fork-list ul li {
+    color: #555;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+.bottom-line {
+    border-bottom: 2px solid #000;
 }
