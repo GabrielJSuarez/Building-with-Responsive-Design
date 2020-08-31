@@ -283,24 +283,68 @@ article.d-grid {
 .funding-header {
   background-color: #f42;
   position: relative;
-  height: 3.5rem;
+  height: 4.4rem;
 }
 
 .funding-header img {
   width: 6.2rem;
   position: absolute;
   left: 1.5rem;
+  top: 1rem;
 }
 
 .funding-header h4 {
   margin-left: 9rem;
   font-size: 1.8rem;
   color: #fff; 
-  padding: 0.7rem 0;
+  padding: 1.4rem 0;
 }
 
 .funding-price {
   background-color: #ffebe7;
+  padding: 1.4rem 0;
   padding-left: 9rem;
+  font-size: 1.4rem;
+}
+.price {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.series {
+    color: #c1b2af;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+}
+
+.funding-description__container {
+    background-color: #fffaf8;
+
+}
+
+.funding-description__container hr{
+    border: 1px solid#ffcdc2;
+}
+
+.funding-icons, .funding-description {
+    padding: 0.7rem 2rem;
+}
+
+.icon-funds {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.icon-funds span {
+    margin-left: 0.7rem;
+    font-size: 1.3rem;
+}
+
+.funding-description__text {
+    font-size: 1.1rem;
+}
+.funding-description__text span{
+    font-size: 0.9rem;
+    color: #74706f;
 }
 
