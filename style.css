@@ -152,7 +152,8 @@ a {
 .article-creative,
 .article-podium,
 .article-launch,
-.article-distract {
+.article-distract,
+.latest-bg {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -223,12 +224,9 @@ a {
     font-weight: 800;
 }
 
-article.d-grid {
+.latest-news-container {
     grid-template-columns: 1fr 4fr;
     gap: 1rem;
-}
-
-.latest-news-container {
     margin-bottom: 1.5rem;
 }
 
@@ -401,4 +399,9 @@ article.d-grid {
 
 .article-distract {
     background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/hqdefault.jpg);
+}
+
+.latest-bg {
+    background-image: url(./assets/images/callofdutycoldwar.jpg);
+    height: 10rem;
 }
