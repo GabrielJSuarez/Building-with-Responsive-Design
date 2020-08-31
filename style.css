@@ -554,3 +554,33 @@ a {
     font-size: 1.2rem;
     margin-right: 1rem;
 }
+
+
+/*-----------------------------*/
+
+
+/* FOOTER */
+
+.footer-container {
+    height: 20rem;
+    background-color: #131313;
+}
+
+.footer-nav {
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav a {
+    margin: 3rem 0.8rem 0 0;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #333;
+}
+
+.footer-info a {
+    font-size: 1.2rem;
+    color: #aaa;
+}
