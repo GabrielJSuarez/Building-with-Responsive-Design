@@ -38,6 +38,10 @@ a {
     display: grid;
 }
 
+.section-container {
+    padding: 2rem;
+}
+
 .no-margin {
     margin: 0;
 }
@@ -140,7 +144,15 @@ a {
 .bg-latest__news-5,
 .bg-latest__news-6,
 .bg-latest__news-7,
-.bg-latest__news-8 {
+.bg-latest__news-8,
+.article-fork,
+.article-apps,
+.article-gear,
+.article-tech,
+.article-creative,
+.article-podium,
+.article-launch,
+.article-distract {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -163,13 +175,15 @@ a {
 }
 
 .article-header {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 0rem;
 }
 
 .article-header p {
     margin: 0;
+    padding-bottom: 0.3rem;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .article-header h2 {
@@ -177,6 +191,7 @@ a {
     color: #fff;
     margin-top: 0.2rem;
     margin-bottom: 0;
+    padding-bottom: 0.3rem;
 }
 
 .article-footer {
@@ -196,17 +211,13 @@ a {
 /* MAIN SECTION */
 
 .main-section {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 
 /* LATEST NEWS */
 
-.latest-section {
-    padding: 2rem;
-}
-
-.latest-section h2 {
+.section-container h2 {
     color: #f42;
     font-size: 2.3rem;
     font-weight: 800;
@@ -281,31 +292,32 @@ article.d-grid {
 }
 
 .funding-header {
-  background-color: #f42;
-  position: relative;
-  height: 4.4rem;
+    background-color: #f42;
+    position: relative;
+    height: 4.4rem;
 }
 
 .funding-header img {
-  width: 6.2rem;
-  position: absolute;
-  left: 1.5rem;
-  top: 1rem;
+    width: 6.2rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1rem;
 }
 
 .funding-header h4 {
-  margin-left: 9rem;
-  font-size: 1.8rem;
-  color: #fff; 
-  padding: 1.4rem 0;
+    margin-left: 9rem;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1.4rem 0;
 }
 
 .funding-price {
-  background-color: #ffebe7;
-  padding: 1.4rem 0;
-  padding-left: 9rem;
-  font-size: 1.4rem;
+    background-color: #ffebe7;
+    padding: 1.4rem 0;
+    padding-left: 9rem;
+    font-size: 1.4rem;
 }
+
 .price {
     font-weight: 700;
     font-size: 1.8rem;
@@ -319,14 +331,14 @@ article.d-grid {
 
 .funding-description__container {
     background-color: #fffaf8;
-
 }
 
-.funding-description__container hr{
+.funding-description__container hr {
     border: 1px solid#ffcdc2;
 }
 
-.funding-icons, .funding-description {
+.funding-icons,
+.funding-description {
     padding: 0.7rem 2rem;
 }
 
@@ -343,8 +355,50 @@ article.d-grid {
 .funding-description__text {
     font-size: 1.1rem;
 }
-.funding-description__text span{
+
+.funding-description__text span {
     font-size: 0.9rem;
     color: #74706f;
 }
 
+
+/*------------------*/
+
+
+/* HARD FORK SECTION */
+
+.article-fork {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/bitcoin-today-big.jpg);
+}
+
+.fork-content {
+    margin: 0;
+}
+
+.article-apps {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/header-background-2.png);
+}
+
+.article-gear {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/news-6.png);
+}
+
+.article-tech {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/pardon-news-header.png);
+}
+
+.article-creative {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/skin-tone-modifiers.png);
+}
+
+.article-podium {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/tech-in-latin-america.jpg);
+}
+
+.article-launch {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/shift.png);
+}
+
+.article-distract {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/hqdefault.jpg);
+}
