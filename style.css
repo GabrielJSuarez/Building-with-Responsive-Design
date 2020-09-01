@@ -60,12 +60,12 @@ a {
     display: none;
 }
 
+.fw-500 {
+    font-weight: 500;
+}
+
 
 /* HEADER */
-
-.top-bar {
-    display: none;
-}
 
 .nav-container {
     position: relative;
@@ -80,10 +80,16 @@ a {
     z-index: 10;
 }
 
+.nav-header,
+.logo-header,
+.icons-header,
+.search-icon {
+    height: 4.8rem;
+}
+
 .nav-header {
     align-items: center;
     justify-content: space-between;
-    height: 4.8rem;
 }
 
 .img-logo {
@@ -92,21 +98,13 @@ a {
 
 .logo-header {
     background: url(./assets/images/page-logo.png);
-    background-size: cover;
     width: 10.2rem;
-    height: 4.8rem;
-    background-position: center;
-}
-
-.icons-header {
-    height: 4.8rem;
 }
 
 .search-icon {
     font-size: 1.7rem;
     margin-right: 0.5rem;
     padding: 1.8rem 1.5rem;
-    height: 4.8rem;
 }
 
 .icons-header .fa-search {
@@ -116,20 +114,12 @@ a {
     border-bottom: none;
 }
 
-.icons-header .fa-bars {
-    color: #ff4422;
-}
-
 .offer-header {
     background-color: #fd3;
     height: 6rem;
     text-align: center;
     padding: 6% 0;
     font-size: 1.2rem;
-}
-
-.clock {
-    display: none;
 }
 
 @media (min-width: 768px) {
@@ -215,43 +205,35 @@ a {
         justify-content: center;
         align-items: center;
     }
-
     .md-nav-info {
         height: 5.2rem;
     }
-
     .icons-header .fa-search {
         border-right: none;
     }
-
     .search-icon {
         height: 4.4rem;
         padding: 1.4rem 1.5rem;
     }
-
     .year-logo {
         width: 12rem;
     }
-
     .clock-container {
         display: flex;
         align-items: center;
     }
-
     .clok-timer {
-        font-size:2.2rem;
+        font-size: 2.2rem;
         margin-right: 1rem;
-        font-weight: 500;
         padding: 0 1.4rem;
     }
-
     .ticket-button {
         background-color: #0cc;
         color: #fff;
         padding: 1rem 2rem;
         border-radius: 0.6rem;
         border: none;
-        font-weight: 700;    
+        font-weight: 700;
     }
 }
 
@@ -267,16 +249,10 @@ a {
 
 .article-content {
     height: 29rem;
-    margin: 0 1rem 1rem;
     padding: 1.2rem 0;
 }
 
-.logo-tnw,
-.cover-gradient,
-.date-article {
-    display: none;
-}
-
+.logo-header,
 .article-1,
 .article-2,
 .article-3,
@@ -339,7 +315,6 @@ a {
 }
 
 .article-header p {
-    margin: 0;
     padding-bottom: 0.3rem;
     color: #fff;
     font-size: 1.3rem;
@@ -394,7 +369,6 @@ a {
     }
     .article-content {
         height: auto;
-        margin: 0;
     }
 }
 
@@ -407,14 +381,14 @@ a {
         position: relative;
     }
     .logo-tnw {
-        display: inherit;
+        display: block;
         position: absolute;
         width: 51%;
         top: 1.5rem;
         left: 2.5rem;
     }
     .cover-gradient {
-        display: inherit;
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
@@ -429,11 +403,10 @@ a {
         font-size: 2.6rem;
     }
     .date-article {
-        display: inherit;
+        display: block;
         position: absolute;
         top: 1.3rem;
         right: 1.3rem;
-        font-weight: 500;
         color: #fff;
         font-size: 1.3rem;
     }
@@ -450,14 +423,14 @@ a {
 }
 
 .main-container {
-    max-width: 1192px; 
+    max-width: 1192px;
     margin: 0 auto;
 }
+
 
 /* LATEST NEWS */
 
 .fork-title {
-    color: #f42;
     font-size: 2.3rem;
     font-weight: 800;
 }
@@ -655,7 +628,6 @@ a {
     color: #74706f;
 }
 
-
 @media (min-width: 768px) {
     /* RESPONSIVE FOUNDING SECTION  */
     .funding-nav {
@@ -668,9 +640,10 @@ a {
     .funding-nav ul li a {
         font-size: 1.7rem;
     }
+    /*
     .funding-nav ul li:last-child a {
-        margin-bottom: 0;
-    }
+        margin-bottom: 2rem;
+    }*/
 }
 
 @media (min-width: 1024px) {
@@ -699,13 +672,11 @@ a {
     }
 }
 
-
 @media (min-width: 1440px) {
     .funding-container:last-child {
         display: inherit;
     }
- }
-
+}
 
 
 /*------------------*/
@@ -715,10 +686,6 @@ a {
 
 .article-fork {
     background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/bitcoin-today-big.jpg);
-}
-
-.fork-content {
-    margin: 0;
 }
 
 .article-apps {
@@ -962,7 +929,6 @@ a {
 .footer-copyright span {
     color: #fff;
     font-size: 1.2rem;
-    font-weight: 500;
 }
 
 @media (min-width: 768px) {
