@@ -1,0 +1,963 @@
+/* stylelint-disable */
+
+
+/* STYLE SHEET */
+
+
+/* GLOBALS */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.section-container,
+.latest-funding,
+.fork-section-container {
+    padding: 2rem;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.orange-text {
+    color: #f42;
+}
+
+.d-none {
+    display: none;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+
+/* HEADER */
+
+.nav-container {
+    position: relative;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.nav-header,
+.logo-header,
+.icons-header,
+.search-icon {
+    height: 4.8rem;
+}
+
+.nav-header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-logo {
+    width: 30%;
+}
+
+.logo-header {
+    background: url(./assets/images/page-logo.png);
+    width: 10.2rem;
+}
+
+.search-icon {
+    font-size: 1.7rem;
+    margin-right: 0.5rem;
+    padding: 1.8rem 1.5rem;
+}
+
+.icons-header .fa-search {
+    color: #aca8a8;
+    border: 1px solid #eee;
+    border-top: none;
+    border-bottom: none;
+}
+
+.offer-header {
+    background-color: #fd3;
+    height: 6rem;
+    text-align: center;
+    padding: 6% 0;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .nav-header,
+    .logo-header {
+        height: 8rem;
+    }
+    .logo-header {
+        width: 100%;
+    }
+    .nav-container {
+        display: none;
+    }
+    .top-bar {
+        display: block;
+    }
+    .nav-grid {
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+    }
+    .md-nav {
+        position: relative;
+        padding: 1rem 2rem;
+        background-color: #000;
+        justify-content: space-between;
+    }
+    .md-nav a {
+        font-size: 1.25rem;
+        margin-right: 0.8rem;
+        color: hsla(0, 0%, 100%, 0.6);
+    }
+    .md-nav-info a {
+        font-size: 1.3rem;
+        color: #aaa;
+        font-weight: 400;
+        margin-right: 1rem;
+    }
+    .md-nav a:first-child {
+        color: #fff;
+    }
+    .md-nav a:last-child {
+        margin-right: 0;
+    }
+    .md-nav a i {
+        padding-left: 0.3rem;
+    }
+    .md-nav-info {
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 2rem;
+    }
+    .icons-header .fa-search {
+        margin-right: 0;
+        width: 6rem;
+        text-align: center;
+    }
+    .offer-header {
+        padding: 2.2rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-header {
+        display: none;
+    }
+    .nav-grid {
+        grid-template-columns: 1fr;
+    }
+    .offer-header {
+        margin-top: 3.4rem;
+        padding: 0.8rem 2.2rem;
+        height: auto;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .xl-searchbar {
+        display: flex;
+        flex-basis: 32%;
+        justify-content: center;
+        align-items: center;
+    }
+    .md-nav-info {
+        height: 5.2rem;
+    }
+    .icons-header .fa-search {
+        border-right: none;
+    }
+    .search-icon {
+        height: 4.4rem;
+        padding: 1.4rem 1.5rem;
+    }
+    .year-logo {
+        width: 12rem;
+    }
+    .clock-container {
+        display: flex;
+        align-items: center;
+    }
+    .clok-timer {
+        font-size: 2.2rem;
+        margin-right: 1rem;
+        padding: 0 1.4rem;
+    }
+    .ticket-button {
+        background-color: #0cc;
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 0.6rem;
+        border: none;
+        font-weight: 700;
+    }
+}
+
+
+/* ------------------- */
+
+
+/* First Article Section */
+
+.articles-container {
+    margin-top: 8rem;
+}
+
+.article-content {
+    height: 29rem;
+    padding: 1.2rem 0;
+    margin: 0 0.5rem 0.5rem;
+}
+
+.logo-header,
+.article-1,
+.article-2,
+.article-3,
+.bg-latest__news-1,
+.bg-latest__news-2,
+.bg-latest__news-3,
+.bg-latest__news-4,
+.bg-latest__news-5,
+.bg-latest__news-6,
+.bg-latest__news-7,
+.bg-latest__news-8,
+.article-fork,
+.article-apps,
+.article-gear,
+.article-tech,
+.article-creative,
+.article-podium,
+.article-launch,
+.article-distract,
+.latest-bg-cod,
+.latest-bg-google,
+.latest-bg-blueray,
+.latest-bg-python,
+.latest-bg-design__thinking,
+.latest-bg-landing__page,
+.latest-bg-bitcoin,
+.latest-bg-bmw,
+.latest-bg-chrome,
+.bg-latest-deals-1,
+.bg-latest-deals-2,
+.bg-latest-deals-3,
+.bg-latest-deals-4,
+.bg-latest-deals-5,
+.bg-latest-deals-6,
+.bg-latest-deals-7,
+.bg-latest-deals-8 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.article-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/business-ethics-796x447.jpg);
+}
+
+.article-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/header-background-3.png);
+}
+
+.article-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/twitter-bg.png);
+}
+
+.flex-p {
+    align-items: flex-end;
+}
+
+.article-header {
+    padding: 1rem 1.5rem 0;
+}
+
+.article-header p {
+    padding-bottom: 0.3rem;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.article-header h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+    padding-bottom: 0.3rem;
+}
+
+.article-footer {
+    margin-top: 0;
+}
+
+.article-footer p {
+    margin: 0.3rem 1rem 0 0;
+    font-size: 1.3rem;
+    color: rgb(221, 221, 221);
+}
+
+@media (min-width: 768px) {
+    .articles-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 20rem);
+        grid-gap: 1rem;
+        margin-top: 11.2rem;
+        padding: 0 1rem;
+    }
+    .article-1 {
+        grid-column: 1 / 3;
+        grid-row: 1/ 3;
+        height: 100%;
+    }
+    .article-2 {
+        grid-column: 3 / 4;
+        grid-row: 1/ 2;
+    }
+    .article-3 {
+        grid-column: 3 / 4;
+        grid-row: 2/ 3;
+    }
+    .article-1 h2 {
+        font-size: 3.6rem;
+    }
+    .article-2 h2,
+    .article-3 h2 {
+        font-size: 2rem;
+    }
+    .article-content {
+        height: auto;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .articles-container {
+        margin-top: 11.3rem;
+        grid-template-rows: repeat(2, 26rem);
+    }
+    .article-1 {
+        position: relative;
+    }
+    .logo-tnw {
+        display: block;
+        position: absolute;
+        width: 51%;
+        top: 1.5rem;
+        left: 2.5rem;
+    }
+    .cover-gradient {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0.77;
+    }
+    .article-1 h2 {
+        font-size: 5.6rem;
+    }
+    .article-2 h2,
+    .article-3 h2 {
+        font-size: 2.6rem;
+    }
+    .date-article {
+        display: block;
+        position: absolute;
+        top: 1.3rem;
+        right: 1.3rem;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+}
+
+
+/*---------------------*/
+
+
+/* MAIN SECTION */
+
+.main-section {
+    margin-top: 1.5rem;
+}
+
+.main-container {
+    max-width: 1192px;
+    margin: 0 auto;
+}
+
+
+/* LATEST NEWS */
+
+.fork-title {
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.latest-news-container {
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.latest-grid {
+    grid-template-columns: 3fr 1.2fr;
+    background-color: #fff4f2;
+}
+
+.latest-content {
+    padding: 1.5rem 1.2rem 0;
+}
+
+.latest-content h3 {
+    margin-top: 0.4rem;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+.bg-latest__news-1 {
+    background-image: url(./assets/images/news-1.jpg);
+}
+
+.bg-latest__news-2 {
+    background-image: url('./assets/images/news-2.jpg');
+}
+
+.bg-latest__news-3 {
+    background-image: url('./assets/images/news-3.png');
+}
+
+.bg-latest__news-4 {
+    background-image: url('./assets/images/news-4.png');
+}
+
+.bg-latest__news-5 {
+    background-image: url('./assets/images/news-5.jpg');
+}
+
+.bg-latest__news-6 {
+    background-image: url('./assets/images/news-6.png');
+}
+
+.bg-latest__news-7 {
+    background-image: url('./assets/images/news-7.jpg');
+}
+
+.bg-latest__news-8 {
+    background-image: url(./assets/images/news-8.jpg);
+}
+
+.grid-content-news {
+    padding: 0.2rem;
+}
+
+.grid-content-news h3 {
+    line-height: 1.4;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) {
+    /* RESPONSIVE LATEST NEWS */
+    .section-container,
+    .latest-funding {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        padding: 2rem;
+    }
+    .fork-title {
+        grid-column: 1/4;
+        grid-row: 1;
+        margin: 2rem 0;
+    }
+    .latest-news-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 15rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-container,
+    .latest-funding {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+        padding: 2rem;
+    }
+    .fork-title {
+        grid-column: 1/5;
+        grid-row: 1;
+        margin: 2rem 0;
+        font-size: 2.4rem;
+    }
+    .grid-content-news h3 {
+        line-height: 1.25;
+        font-size: 1.6rem;
+    }
+    .grid-content-news p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/*-----------------------------*/
+
+
+/* Latest funding section */
+
+.funding-nav ul {
+    list-style: none;
+}
+
+.funding-nav ul li a {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.funding-header {
+    background-color: #f42;
+    position: relative;
+    height: 4.4rem;
+}
+
+.funding-header img {
+    width: 6.2rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1rem;
+}
+
+.funding-header h4 {
+    margin-left: 9rem;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1.4rem 0;
+}
+
+.funding-price {
+    background-color: #ffebe7;
+    padding: 1.4rem 0;
+    padding-left: 9rem;
+    font-size: 1.4rem;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.series {
+    color: #c1b2af;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+}
+
+.funding-description__container {
+    background-color: #fffaf8;
+}
+
+.funding-description__container hr {
+    border: 1px solid#ffcdc2;
+}
+
+.funding-icons,
+.funding-description {
+    padding: 0.7rem 2rem;
+}
+
+.icon-funds {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.icon-funds span {
+    margin-left: 0.7rem;
+    font-size: 1.3rem;
+}
+
+.funding-description__text {
+    font-size: 1.1rem;
+}
+
+.funding-description__text span {
+    font-size: 0.9rem;
+    color: #74706f;
+}
+
+@media (min-width: 768px) {
+    /* RESPONSIVE FOUNDING SECTION  */
+    .funding-nav {
+        grid-row: 2;
+        grid-column: 1/4;
+    }
+    .funding-header h4 {
+        margin-top: 0;
+    }
+    .funding-nav ul li a {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* LAST FUNDING SECTION */
+    .latest-funding h2 {
+        margin: 1rem 0;
+    }
+    .funding-nav {
+        grid-column: 1/5;
+    }
+    .funding-nav ul {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0 2rem 0;
+        grid-row: 2/4;
+    }
+    .funding-nav ul li a {
+        margin-bottom: 0;
+        padding: 0 2rem;
+        border-right: 1px solid #f42;
+    }
+    .funding-nav ul li:first-child a {
+        padding-left: 0;
+    }
+    .funding-nav ul li:last-child a {
+        border-right: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .funding-container:last-child {
+        display: inherit;
+    }
+    .latest-funding {
+        align-items: center;
+    }
+    .funding-nav {
+        grid-row: 1;
+        grid-column: 3/5;
+    }
+    .funding-nav ul {
+        margin: 0 0 0.3rem 14.4rem;
+    }
+    .funding-nav ul li:last-child a {
+        padding-right: 0;
+    }
+}
+
+
+/*------------------*/
+
+
+/* HARD FORK SECTION */
+
+.article-fork {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/bitcoin-today-big.jpg);
+}
+
+.fork-content {
+    margin: 0;
+}
+
+.article-apps {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/header-background-2.png);
+}
+
+.article-gear {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/news-6.png);
+}
+
+.article-tech {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/pardon-news-header.png);
+}
+
+.article-creative {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/skin-tone-modifiers.png);
+}
+
+.article-podium {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/tech-in-latin-america.jpg);
+}
+
+.article-launch {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/shift.png);
+}
+
+.article-distract {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/hqdefault.jpg);
+}
+
+.latest-bg-cod {
+    background-image: url(./assets/images/callofdutycoldwar.jpg);
+}
+
+.latest-bg-google {
+    background-image: url(./assets/images/google-logo-img.png);
+}
+
+.latest-bg-blueray {
+    background-image: url(./assets/images/blue-ray-img.jpg);
+}
+
+.latest-bg-python {
+    background-image: url(./assets/images/python-article-img.png);
+}
+
+.latest-bg-design__thinking {
+    background-image: url(./assets/images/design-thinking.jpg);
+}
+
+.latest-bg-landing__page {
+    background-image: url(./assets/images/product-landing-page.jpg);
+}
+
+.latest-bg-bitcoin {
+    background-image: url(./assets/images/bitcoin-today-big.jpg);
+}
+
+.latest-bg-bmw {
+    background-image: url(./assets/images/BMW-ix3-unveiling-car-future-bavarian-motor-ev-electric.png);
+}
+
+.latest-bg-chrome {
+    background-image: url(./assets/images/Dinoswords_ProductHunt_GalleryImage2_v1-1.png);
+}
+
+.fork-list {
+    margin-top: 1rem;
+}
+
+.fork-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fork-list ul li {
+    color: #555;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem 0.5rem 1.7rem;
+    margin-bottom: 1.3rem;
+    line-height: 1.3;
+    position: relative;
+}
+
+.fork-list ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+    font-size: 2rem;
+}
+
+.bottom-line {
+    border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 768px) {
+    .fork-section-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .fork-container h2 {
+        margin: 2rem 0;
+    }
+    .fork-container .fork-title {
+        margin-bottom: 2rem;
+    }
+    .article-fork {
+        height: 26rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fork-section-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+/*---------------------------*/
+
+
+/* LATEST DEALS */
+
+.deals-title {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deals-title p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.bg-latest-deals-1 {
+    background-image: url(./assets/images/sale_36849_primary_image.jpg);
+}
+
+.bg-latest-deals-2 {
+    background-image: url(./assets/images/sale_36919_primary_image.jpg);
+}
+
+.bg-latest-deals-3 {
+    background-image: url(./assets/images/product_47836_product_shots2.jpg);
+}
+
+.bg-latest-deals-4 {
+    background-image: url(./assets/images/sale_37000_primary_image.jpg);
+}
+
+.bg-latest-deals-5 {
+    background-image: url(./assets/images/sale_38683_primary_image.jpg);
+}
+
+.bg-latest-deals-6 {
+    background-image: url(./assets/images/product_27619_product_shots1.jpg);
+}
+
+.bg-latest-deals-7 {
+    background-image: url(./assets/images/sale_27983_primary_image.jpg);
+}
+
+.bg-latest-deals-8 {
+    background-image: url(./assets/images/product_30218_product_shots1.jpg);
+}
+
+.price-deals p {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+
+/*-----------------------------*/
+
+
+/* FOOTER */
+
+.footer-container {
+    height: 20rem;
+    background-color: #131313;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.footer-nav {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    height: 5rem;
+}
+
+.footer-nav a {
+    margin: 0 0.8rem 0 0;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #333;
+}
+
+.footer-info {
+    text-align: center;
+    margin: 1rem;
+    word-spacing: 0.6rem;
+}
+
+.footer-info a {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.footer-copyright a img {
+    width: 3.7rem;
+}
+
+.footer-copyright {
+    background-color: #000;
+    text-align: center;
+    height: 11.5rem;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.made-footer {
+    margin: 0.5rem 0;
+}
+
+.footer-copyright a {
+    color: #aaa;
+}
+
+.footer-copyright span {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .footer-nav a {
+        margin-left: 1.2rem;
+        font-size: 2rem;
+    }
+    .footer-copyright {
+        height: 11.5rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+}
