@@ -198,6 +198,17 @@ a {
     padding: 1.2rem 0;
 }
 
+@media (min-width: 768px) {
+    .articles-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .article-1 {
+        grid-column: 1 / 3;
+        grid-row: 1/ 3;
+        height: 100%;
+    }
+}
+
 .article-1,
 .article-2,
 .article-3,
