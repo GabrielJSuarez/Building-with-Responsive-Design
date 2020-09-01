@@ -409,17 +409,17 @@ a {
     .latest-funding {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
+        column-gap: 1rem;
         padding: 2rem;
     }
     .fork-title {
         grid-column: 1/4;
         grid-row: 1;
-        margin: 2rem 0 0;
+        margin: 2rem 0;
     }
     .latest-news-container {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(1, 12rem);
+        grid-template-rows: repeat(1, 15rem);
     }
 }
 
