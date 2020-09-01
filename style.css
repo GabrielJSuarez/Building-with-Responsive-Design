@@ -61,7 +61,6 @@ a {
     display: none;
 }
 
-
 .nav-container {
     position: relative;
 }
@@ -93,13 +92,11 @@ a {
     background-position: center;
 }
 
-
-
 .icons-header {
     height: 4.8rem;
 }
 
-.icons-header i {
+.search-icon {
     font-size: 1.7rem;
     margin-right: 0.5rem;
     padding: 1.8rem 1.5rem;
@@ -130,11 +127,9 @@ a {
     .logo-header {
         height: 8rem;
     }
-    
-    .logo-header{
+    .logo-header {
         width: 10.5rem;
     }
-
     .nav-container {
         display: none;
     }
@@ -146,44 +141,46 @@ a {
         grid-template-columns: 1fr 7fr;
     }
     .md-nav {
-        padding: 1rem;
+        position: relative;
+        padding: 1rem 2rem;
         background-color: #000;
-        padding-left: 2rem;
+        justify-content: space-between;
     }
     .md-nav a {
-        font-size: 1.2rem;
-        margin-right: 1rem;
+        font-size: 1.25rem;
+        margin-right: 0.8rem;
+        color: hsla(0, 0%, 100%, .6);
+        ;
+    }
+    .md-nav a:first-child {
         color: #fff;
+    }
+    .md-nav a:last-child {
+        margin-right: 0;
+    }
+    .md-nav a i {
+        padding-left: 0.3rem;
     }
     .md-nav-info {
         justify-content: space-between;
         align-items: center;
         padding-left: 2rem;
     }
-    
     .md-nav-info a {
         font-size: 1.3rem;
         color: #aaa;
         font-weight: 400;
         margin-right: 1rem;
     }
-
     .icons-header .fa-search {
         margin-right: 0;
         width: 6rem;
         text-align: center;
     }
-
     .offer-header {
         padding: 2.2rem 0;
     }
-    
 }
-
-
-
-
-
 
 
 /* ------------------- */
