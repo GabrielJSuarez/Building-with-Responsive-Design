@@ -660,6 +660,7 @@ a {
         display: flex;
         align-items: center;
         margin: 1rem 0 2rem 0;
+        grid-row: 2/4 ;
     }
     .funding-nav ul li a {
         margin-bottom: 0;
@@ -672,11 +673,27 @@ a {
     .funding-nav ul li:last-child a {
         border-right: none;
     }
+
 }
 
 @media (min-width: 1440px) {
     .funding-container:last-child {
         display: inherit;
+    }
+    .latest-funding {
+        align-items: center;
+    }
+    .funding-nav {
+        grid-row: 1;
+        grid-column: 3/5;
+    }
+
+    .funding-nav ul {
+        margin: 0 0 0.3rem 14.4rem;
+    }
+
+    .funding-nav ul li:last-child a {
+        padding-right: 0;
     }
 }
 
