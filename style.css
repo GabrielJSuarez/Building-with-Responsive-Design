@@ -406,6 +406,28 @@ a {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (min-width: 768px) { 
+  /* RESPONSIVE LATEST NEWS */
+
+  .section-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .fork-title {
+      grid-column: 1/4;
+      grid-row: 1;
+      margin: 2rem 0 0;
+  }
+
+  .latest-news-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1,12rem);
+  }
+
+}
 
 /*-----------------------------*/
 
@@ -493,6 +515,28 @@ a {
     color: #74706f;
 }
 
+@media (min-width: 768px) { 
+    /* RESPONSIVE FOUNDING SECTION  */
+
+    .funding-nav {
+        grid-row: 2;
+        grid-column: 1/4;
+    }
+
+   /*  .funding-nav li {
+        display: inline-block;
+    }
+
+    .funding-nav li:not(:last-child) {
+        border-right: 1px solid orange;
+    }*/
+
+    
+
+    .funding-nav ul li a {
+        font-size: 1.7rem;
+    } 
+}
 
 /*------------------*/
 
