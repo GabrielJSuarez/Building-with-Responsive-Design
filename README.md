@@ -2,13 +2,13 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Building-with-Responsive-Design
+# Building with Responsive Design
 
-> A clone of the Smashing Magazine Website's Heatmap , all Javascript features will be omitted.
+> A clone of the 'The Next Web' website , all Javascript features will be omitted.
 
-https://www.smashingmagazine.com/
+https://thenextweb.com/
 
-![Alt text](https://github.com/GabrielJSuarez/designTeardown-Microverse/blob/cloneBranch-Feature/assets/images/screenshot.png?raw=true "Screenshot")
+![Alt text](https://github.com/GabrielJSuarez/Building-with-Responsive-Design/blob/TNW-Clone-Feature/assets/images/screenshot.png?raw=true "Screenshot")
 
 ## Built With
 
@@ -16,7 +16,7 @@ https://www.smashingmagazine.com/
 
 ## Live Demo
 
-[Live Demo Link](https://gabrieljsuarez.github.io/designTeardown-Microverse/)
+[Live Demo Link]( https://gabrieljsuarez.github.io/Building-with-Responsive-Design/)
 
 
 ## Getting Started
