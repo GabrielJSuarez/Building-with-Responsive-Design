@@ -211,10 +211,47 @@ a {
 @media (min-width: 1440px) {
     .xl-searchbar {
         display: flex;
-        flex-basis: 30%;
+        flex-basis: 32%;
+        justify-content: center;
+        align-items: center;
     }
+
+    .md-nav-info {
+        height: 5.2rem;
+    }
+
+    .icons-header .fa-search {
+        border-right: none;
+    }
+
+    .search-icon {
+        height: 4.4rem;
+        padding: 1.4rem 1.5rem;
+    }
+
+    .year-logo {
+        width: 12rem;
+    }
+
     .clock-container {
         display: flex;
+        align-items: center;
+    }
+
+    .clok-timer {
+        font-size:2.2rem;
+        margin-right: 1rem;
+        font-weight: 500;
+        padding: 0 1.4rem;
+    }
+
+    .ticket-button {
+        background-color: #0cc;
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 0.6rem;
+        border: none;
+        font-weight: 700;    
     }
 }
 
@@ -412,6 +449,10 @@ a {
     margin-top: 1.5rem;
 }
 
+.main-container {
+    max-width: 1192px; 
+    margin: 0 auto;
+}
 
 /* LATEST NEWS */
 
@@ -614,6 +655,7 @@ a {
     color: #74706f;
 }
 
+
 @media (min-width: 768px) {
     /* RESPONSIVE FOUNDING SECTION  */
     .funding-nav {
@@ -656,6 +698,14 @@ a {
         border-right: none;
     }
 }
+
+
+@media (min-width: 1440px) {
+    .funding-container:last-child {
+        display: inherit;
+    }
+ }
+
 
 
 /*------------------*/
