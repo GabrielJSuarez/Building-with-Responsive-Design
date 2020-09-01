@@ -251,6 +251,7 @@ a {
 .article-content {
     height: 29rem;
     padding: 1.2rem 0;
+    margin: 0 0.5rem 0.5rem;
 }
 
 .logo-header,
@@ -370,6 +371,7 @@ a {
     }
     .article-content {
         height: auto;
+        margin: 0;
     }
 }
 
@@ -699,6 +701,10 @@ a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/bitcoin-today-big.jpg);
 }
 
+.fork-content {
+    margin: 0;
+}
+
 .article-apps {
     background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.603)), url(./assets/images/header-background-2.png);
 }
@@ -881,7 +887,7 @@ a {
 /* FOOTER */
 
 .footer-container {
-    height: 18rem;
+    height: 20rem;
     background-color: #131313;
     flex-direction: column;
     justify-content: center;
@@ -892,6 +898,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    height: 5rem;
 }
 
 .footer-nav a {
@@ -905,7 +912,7 @@ a {
 
 .footer-info {
     text-align: center;
-    margin-top: 0.5rem;
+    margin: 1rem;
     word-spacing: 0.6rem;
 }
 
