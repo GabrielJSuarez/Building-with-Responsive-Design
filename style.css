@@ -645,7 +645,7 @@ a {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    .fork-title {
+    .fork-container .fork-title {
         margin-bottom: 2rem;
     }
     .article-fork {
@@ -715,7 +715,7 @@ a {
 .footer-container {
     height: 18rem;
     background-color: #131313;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     padding-top: 3rem
 }
@@ -723,6 +723,7 @@ a {
 .footer-nav {
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .footer-nav a {
@@ -772,4 +773,18 @@ a {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .footer-nav a {
+        margin-left: 1.2rem;
+        font-size: 2rem;
+    }
+    .footer-copyright {
+        height: 11.5rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+    }
 }
